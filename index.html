@@ -1,17 +1,29 @@
 <html>
 <head>
 <title>Marcel Klehr</title>
+<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet" />
 <style>
 body {
   background: url('./bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: serif;
-  color: #006655;
+  background-position: center center;
+  font-family: 'Quicksand', serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 a:link, a:hover, a:visited {
-  color: #006655;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px dotted white;
+  font-weight: bolder;
+}
+a:hover {
+  border-bottom: none;
 }
 
 .container {
@@ -20,11 +32,17 @@ a:link, a:hover, a:visited {
   max-width: 500px;
   margin: 100px auto;
   padding: 50px;
-  background: #ffffffd8;
+  padding-top: 1px;
+  background-color: #00000044;
+  border-left: 2px solid white;
+  text-shadow: 0 0 1px #000, 0 0 7px #000, 0 0 15px #000, 0 0 40px #000, 0 0 40px #000, 0 0 90px #000;
 }
 
 h1 {
-  margin: 10px 0;
+  font-size: 70px;
+}
+h1, h2, h3 {
+  margin: 40px 0 15px 0;
 }
 .subheading {
   font-style: italic;
@@ -33,13 +51,13 @@ h1 {
 .portfolio {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .portfolio div {
-  width: 160px;
-  padding: 15px 20px;
-  margin: 5px;
-  background: white;
+  width: 110px;
+  margin-right: 15px;
+  margin-bottom: 15px;
 }
 </style>
 </head>
@@ -48,6 +66,7 @@ h1 {
 <div class="container">
 <h1>Marcel Klehr</h1>
 <p class="subheading">Passionate rationalist, pragmatic melancholic, unasked commentator, creator of open things, random spectator.</p>
+<h3>What I create</h3>
 <div class="portfolio">
 <div>
 <a href="https://github.com/marcelklehr">Code</a>
